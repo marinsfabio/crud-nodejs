@@ -1,0 +1,41 @@
+GET http://localhost:3000/ HTTP/1.1
+Content-Type: application/json
+
+###
+
+// create user
+POST http://localhost:3000/person HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Andrieli Ramos",
+  "salary": 5000,
+  "approved": true
+}
+
+###
+
+// list user
+GET http://localhost:3000/person HTTP/1.1
+Content-Type: application/json
+
+###
+
+GET http://localhost:3000/person/id HTTP/1.1
+Content-Type: application/json
+
+{
+  "_id": "640e6f5aebe22656917e3e8c",
+  "name": "Andrieli Ramos",
+  "salary": 5000,
+  "approved": true
+}
+
+###
+
+DELETE http://localhost:3000/person HTTP/1.1
+Content-Type: application/json
+
+{
+  "name": "Fabio Marins"
+}
