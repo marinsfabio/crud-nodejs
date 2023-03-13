@@ -74,7 +74,7 @@ app.delete('/person', async (req, res) => {
 })
 
 // entregar uma porta
-mongoose.connect('mongodb+srv://crud-nodejs:vW0Jeb5BEnj6HRIN@cluster0.metkx8c.mongodb.net/?retryWrites=true&w=majority')
+mongoose.connect('cria uma sua')
 .then(() => {
   console.log('DB CONECTADO')
   app.listen(3000)
